@@ -10,6 +10,9 @@ Migrar el diseño aprobado **con paridad visual y funcional** a un proyecto Astr
 
 ## Guía obligatoria para Codex
 
+- **[CODEX_TAREA.md](CODEX_TAREA.md): iniciar aquí la tarea completa de exportación y migración.**
+- [docs/MANIFIESTO_RECURSOS.json](docs/MANIFIESTO_RECURSOS.json): integridad de los 13 recursos verificados en Git.
+- [docs/PROCEDENCIA_EXPORTACION.md](docs/PROCEDENCIA_EXPORTACION.md): seguimiento de la exportación pendiente.
 - [AGENTS.md](AGENTS.md): instrucciones operativas para Codex.
 - [docs/REFERENCIA_VISUAL.md](docs/REFERENCIA_VISUAL.md): requisitos recuperados de las decisiones de diseño del cliente.
 - [docs/INVENTARIO_RECURSOS.md](docs/INVENTARIO_RECURSOS.md): recursos originales, procedencia y pendientes.
