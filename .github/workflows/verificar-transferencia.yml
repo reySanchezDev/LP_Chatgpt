@@ -1,0 +1,22 @@
+name: Verificar integridad de recursos originales
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar-recursos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verificar archivos de Drive conservados
+        run: node scripts/verificar-transferencia.mjs
