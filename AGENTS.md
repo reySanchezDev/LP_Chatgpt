@@ -1,3 +1,5 @@
+> **Punto de entrada obligatorio para Codex:** leer primero [CODEX_TAREA.md](CODEX_TAREA.md); la exportación de ChatGPT Sites es requisito previo. Verificación de recursos: `node scripts/verificar-transferencia.mjs`. **No declarar el sitio migrado antes de acceder al código original y superar QA.**
+
 # Instrucciones para Codex — La Sazón de Sheyla
 
 ## Misión y criterio principal
