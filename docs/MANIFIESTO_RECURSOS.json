@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "nombre": "La Sazón de Sheyla — manifiesto verificable de recursos",
+  "fecha_verificacion": "2026-11-21",
+  "sitio_de_referencia": "https://la-sazon-de-sheyla-nindiri.gracefulglobe8.chatgpt.site/",
+  "repositorio": "reySanchezDev/LP_Chatgpt",
+  "procedencia": "https://drive.google.com/drive/folders/1GNHDlGkVOaQsGNOCViDV2gxfXK0TFExb",
+  "procedencia_fotografias": "https://drive.google.com/drive/folders/1F_VWOUb3JzshPTsGPxrVsddQ3mpk3JVH",
+  "nota": "SHA-1 es el identificador de objeto Git blob, no SHA-1 simple del archivo. Son recursos del negocio recuperados de Drive; no hay prueba de que cada uno se emplee en el Site publicado.",
+  "codigo_original_sitio": {
+    "estado": "PENDIENTE_DE_EXPORTACION_DESDE_CHATGPT_SITES",
+    "ubicacion_esperada": "reference/site-original/",
+    "no_disponible_en_repositorio": true
+  },
+  "activos_verificados": [
+    {
+      "path": "assets/fotografias/Enchilada_Para_Comer_Aqui_Fondo_Blanco.jpg",
+      "bytes": 828907,
+      "git_blob_sha1": "0e54023b5457acd5f58ff65b8febc9a8b5144e01"
+    },
+    {
+      "path": "assets/fotografias/Enchilada_Para_Comer_Aqui_Transparente.png",
+      "bytes": 1962478,
+      "git_blob_sha1": "43a70fa2545bf207273868106b998b6033a9b994"
+    },
+    {
+      "path": "assets/fotografias/Nachos_Para_Comer_Aqui_Fondo_Blanco.jpg",
+      "bytes": 1009101,
+      "git_blob_sha1": "0be0294f16dd594fcf94035bee603bece8f0da1f"
+    },
+    {
+      "path": "assets/fotografias/Nachos_Para_Comer_Aqui_Transparente.png",
+      "bytes": 2006141,
+      "git_blob_sha1": "f0e9ed708fee2ef3b79a6e53c8bf85ffbd04afd7"
+    },
+    {
+      "path": "assets/fotografias/Portada_Google_Maps_Restaurada_2160x1216.jpg",
+      "bytes": 955538,
+      "git_blob_sha1": "5dd416742fc41b2680a4fd2f961419ec08a8bd39"
+    },
+    {
+      "path": "assets/fotografias/Refresco_de_Cacao_Con_Cubitos_Fondo_Blanco.jpg",
+      "bytes": 554752,
+      "git_blob_sha1": "18c63506b1897313d3b65a2861896dea05dc025a"
+    },
+    {
+      "path": "assets/fotografias/Refresco_de_Cacao_Con_Cubitos_Transparente.png",
+      "bytes": 1541791,
+      "git_blob_sha1": "a8e5aee10bc34073e1ab05a157b644a1a108592b"
+    },
+    {
+      "path": "assets/fotografias/Tacos_Para_Comer_Aqui_Fondo_Blanco.jpg",
+      "bytes": 817953,
+      "git_blob_sha1": "a84ee61c7eb4f04e673c3c4251109fcfdf464602"
+    },
+    {
+      "path": "assets/fotografias/Tacos_Para_Comer_Aqui_Transparente.png",
+      "bytes": 1943528,
+      "git_blob_sha1": "8c1088db041685e290a04966b2e63a4d77a59dec"
+    },
+    {
+      "path": "assets/fotografias/Tacos_Para_Llevar_Fondo_Blanco.jpg",
+      "bytes": 873330,
+      "git_blob_sha1": "214cb2e5042b17aad4c89b8dc621b2ab532e3789"
+    },
+    {
+      "path": "assets/fotografias/Tacos_Para_Llevar_Transparente.png",
+      "bytes": 2211621,
+      "git_blob_sha1": "368f28e579e136b85b41892e63577aa31931ced6"
+    },
+    {
+      "path": "assets/originales/logo.jpg",
+      "bytes": 698944,
+      "git_blob_sha1": "5f3445361269303310a71051a3d0dbaa208a3c12"
+    },
+    {
+      "path": "assets/originales/logo.png",
+      "bytes": 803859,
+      "git_blob_sha1": "389ceeb9be68770a7ab9b1d3e8da56d743b352be"
+    }
+  ]
+}
