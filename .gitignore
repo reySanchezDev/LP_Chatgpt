@@ -1,0 +1,23 @@
+# Astro / Node
+node_modules/
+dist/
+.astro/
+.vercel/
+.netlify/
+coverage/
+.playwright/
+playwright-report/
+test-results/
+
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# System/editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
