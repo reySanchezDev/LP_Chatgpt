@@ -1,0 +1,51 @@
+name: Recuperar wallpaper original del ChatGPT Site
+
+on:
+  push:
+    paths:
+      - '.github/workflows/recuperar-wallpaper.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recuperar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar lector Chromium
+        run: |
+          command -v google-chrome || true
+          npm install --no-save --no-package-lock --ignore-scripts playwright-core
+      - name: Recuperar los fondos originales mediante CSS computado
+        run: node scripts/recuperar-wallpaper-original.mjs
+      - name: Versionar solo los recursos reales recuperados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/recuperados-chatgpt-site assets/fondos docs/RECUPERACION_WALLPAPER.md docs/RECUPERACION_WALLPAPER.json
+          if ! git diff --cached --quiet; then
+            git commit -m "assets: recuperar wallpaper y fondos reales del ChatGPT Site"
+            git push origin HEAD:main
+          fi
+      - name: Guardar evidencia para revisión
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencia-recuperacion-wallpaper
+          path: |
+            docs/RECUPERACION_WALLPAPER.md
+            docs/RECUPERACION_WALLPAPER.json
+            assets/recuperados-chatgpt-site/
+            assets/fondos/
+          if-no-files-found: ignore
+          retention-days: 7
